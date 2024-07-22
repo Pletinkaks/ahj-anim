@@ -1,0 +1,53 @@
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .collapse {
+    padding: 50px 0;
+  
+    background: #ccc;
+  }
+  
+  .collapse .container {
+    background: white;
+    padding: 15px;
+  }
+  
+  .collapse__btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+    color: white;
+    background: #1b69cd;
+  
+    cursor: pointer;
+  }
+  
+  .collapse__block {
+    height: 0;
+  
+    overflow: hidden;
+    transition: height 2s;
+  }
+  
+  .collapse__text {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .collapse__anim {
+    transition: height 2s;
+  }
