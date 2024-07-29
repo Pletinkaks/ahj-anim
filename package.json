@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint ./src --fix",
+    "lint": "eslint . --fix",
     "test": "jest",
     "coverage": "jest --coverage",
     "ci": "start-test :8080 test"
@@ -16,7 +16,7 @@
   },
   "author": "",
   "license": "MIT",
-"devDependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "core-js": "^3.35.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "file-loader": "^6.2.0",
     "puppeteer": "^22.6.2"
   }
