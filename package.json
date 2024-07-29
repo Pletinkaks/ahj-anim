@@ -40,6 +40,7 @@
     "file-loader": "^6.2.0",
     "globals": "^15.8.0",
     "mini-css-extract-plugin": "^2.9.0",
-    "puppeteer": "^22.6.2"
+    "puppeteer": "^22.6.2",
+    "puppeteer-core": "^22.14.0"
   }
 }
