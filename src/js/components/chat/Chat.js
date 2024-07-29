@@ -1,4 +1,4 @@
-import './style.css';
+import "./style.css";
 
 export default class Chat {
   constructor(container) {
@@ -18,24 +18,24 @@ export default class Chat {
   }
 
   btnShow() {
-    const btn = this.containerChat.querySelector('.chat_btn');
+    const btn = this.containerChat.querySelector(".chat_btn");
 
-    btn.addEventListener('click', this.onClickBtn);
+    btn.addEventListener("click", this.onClickBtn);
   }
 
   btnClose() {
-    const btn = this.containerChat.querySelector('.chat__close');
+    const btn = this.containerChat.querySelector(".chat__close");
 
-    btn.addEventListener('click', this.onClickBtn);
+    btn.addEventListener("click", this.onClickBtn);
   }
 
   onClickBtn() {
-    this.containerChat.classList.toggle('chat__show');
+    this.containerChat.classList.toggle("chat__show");
   }
 
   render() {
-    this.container.insertAdjacentHTML('beforeend', Chat.markup());
-    this.containerChat = this.container.querySelector('.chat');
+    this.container.insertAdjacentHTML("beforeend", Chat.markup());
+    this.containerChat = this.container.querySelector(".chat");
   }
 
   static markup() {
